@@ -6,6 +6,8 @@ const typeDefs = gql`
         name: String
         url: String
         tileImage: String
+        online: Boolean
+        instore: Boolean
     }
 
     type Query {

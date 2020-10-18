@@ -14,6 +14,8 @@ class TilesAPI extends RESTDataSource {
                 currentTileUrl,
                 name,
                 url,
+                online,
+                instore,
             },
         } = tile;
 
@@ -22,11 +24,12 @@ class TilesAPI extends RESTDataSource {
             name,
             tileImage: currentTileUrl,
             url,
+            online,
+            instore,
         }
     }
 
     async getTiles() {
-        console.log('[Calling getTiles()]');
         const response = await this.get('tiles');
 
         const jsonResponse = JSON.parse(response);
