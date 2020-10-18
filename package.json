@@ -1,0 +1,15 @@
+{
+  "name": "claybuy-merchant-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Cyrus Liew",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-datasource-rest": "^0.9.4",
+    "apollo-server": "^2.18.2",
+    "axios": "^0.20.0"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  }
+}
